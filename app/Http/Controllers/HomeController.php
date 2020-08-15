@@ -25,17 +25,17 @@ class HomeController extends Controller
      *
      * @return void
      */
-    public function __construct()
-    {
-        // get campaign Cookie
-        $campaign_cookie = \Cookie::get('campaign');
-        if (!$campaign_cookie) {
-            $this->middleware('auth');
-            $this->middleware('confirmed');
-            //$this->middleware('billing');
-        }
+    // public function __construct()
+    // {
+    //     // get campaign Cookie
+    //     $campaign_cookie = \Cookie::get('campaign');
+    //     if (!$campaign_cookie) {
+    //         $this->middleware('auth');
+    //         $this->middleware('confirmed');
+    //         //$this->middleware('billing');
+    //     }
 
-    }
+    // }
 
     /**
      * Show the application dashboard.
@@ -44,6 +44,8 @@ class HomeController extends Controller
      */
     public function index(Request $request)
     {
+        // $user = User::all();
+        // dd($user);
 
         $campaign_cookie = \Cookie::get('campaign');
         $campaign_email = \Cookie::get('campaign_email');
