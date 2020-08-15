@@ -1,4 +1,6 @@
 <?php $__env->startSection('content'); ?>
+
+
     <div class="container-fluid app-body app-home">
         <?php if($user->name): ?>
             <h1> Hello <?php echo e(ucwords($user->first_name)); ?>!</h1>
@@ -7,6 +9,9 @@
             <div class="col-md-12">
             <?php if($user->plansubs()): ?>
                 <?php
+
+
+        // dd('109');
 
                 $timestamp = $user->plansubs()['subscription']->current_period_start;
                 if (!$timestamp) {

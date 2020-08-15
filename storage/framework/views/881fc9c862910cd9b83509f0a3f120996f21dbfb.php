@@ -317,6 +317,9 @@ if($user_meta['temp_user'] === true){
                     <li <?php if($route=='settings'): ?> class="active" <?php endif; ?>><a href="<?php echo e(url('/settings')); ?>"> <i
                                     class="fa fa-gear"></i> Settings</a></li>
 
+                    <li <?php if($route=='new-menu'): ?> class="active" <?php endif; ?>><a href="<?php echo e(url('/new-menu')); ?>"> <i
+                                    class="fa fa-twitter"></i> New Menu</a></li>
+
                     <li <?php if($route=='history'): ?> class="active" <?php endif; ?>><a href="<?php echo e(url('/history')); ?>"> <i
                                     class="fa fa-home"></i> History</a></li>
                 <?php endif; ?>

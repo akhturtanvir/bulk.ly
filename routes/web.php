@@ -99,6 +99,10 @@ Route::get('/support/', 'PagesController@support')->name('support');
 Route::get('/start/', 'PagesController@start')->name('start');
 
 
+
+Route::get('/new-menu', 'newMenuController@newMenu')->name('new-menu');
+
+
 Route::post('/settings/timezone/', 'PagesController@history')->name('saveTimezone');
 
 //Route::get('/friday', 'PagesController@friday')->name('friday');

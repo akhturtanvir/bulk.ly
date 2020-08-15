@@ -1,5 +1,7 @@
 @extends('layouts.app')
 @section('content')
+
+
     <div class="container-fluid app-body app-home">
         @if($user->name)
             <h1> Hello {{ucwords($user->first_name) }}!</h1>
@@ -8,6 +10,9 @@
             <div class="col-md-12">
             @if($user->plansubs())
                 <?php
+
+
+        // dd('109');
 
                 $timestamp = $user->plansubs()['subscription']->current_period_start;
                 if (!$timestamp) {

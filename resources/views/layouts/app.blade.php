@@ -319,6 +319,9 @@ if($user_meta['temp_user'] === true){
                     <li @if ($route=='settings') class="active" @endif><a href="{{ url('/settings') }}"> <i
                                     class="fa fa-gear"></i> Settings</a></li>
 
+                    <li @if ($route=='new-menu') class="active" @endif><a href="{{ url('/new-menu') }}"> <i
+                                    class="fa fa-twitter"></i> New Menu</a></li>
+
                     <li @if ($route=='history') class="active" @endif><a href="{{ url('/history') }}"> <i
                                     class="fa fa-home"></i> History</a></li>
                 @endif
